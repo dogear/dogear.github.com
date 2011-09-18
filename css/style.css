@@ -4,8 +4,15 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background-image: url('city-background.jpg');
-	background-attachment:fixed;
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(top, #1e5799 0%, #7db9e8 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(0%,#7db9e8), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1e5799 0%,#7db9e8 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1e5799 0%,#7db9e8 0%,#ffffff 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #1e5799 0%,#7db9e8 0%,#ffffff 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #1e5799 0%,#7db9e8 0%,#ffffff 100%); /* W3C */
+	background-repeat: no-repeat;
 }
 #container {
 	width: 1100px;
@@ -15,30 +22,38 @@ body {
 }
 
 #header {
-	height: 200px;
+	height: 100px;
 }
 
 #signin_container{
 	float:right;
 	font-family: "Helvetica", "Arial", sans-serif;
 	font-size: 13px;
+	margin-top: 15px;
 }
 
-.credentials h2{
-	margin: 5px;
-	margin-bottom: 0px;
+#social_container{
+	position: relative;
+	left: 50px;
+	top: 20px;
+	width: 100px;
+	height: 100px;
+}
+.credentials {
+	margin-top: 5px;
+	color: white;
 }
 
 #logo {
 	float:left;
 	opacity: 0.8;
 	width: 200px;
+	height: 100px;
 }
 
 #nav {
 	height: 100%;
 	width: 1100px;
-	background-color: #F29627;
 }
 
 #nav ul {
@@ -81,22 +96,21 @@ body {
 	border-radius: 5px;
 }
 
-#updates {
-	height: 310px;
-}
-
 #footer{
 	height: 40px;
 	position: relative;
+	margin-top: 10px;
 }
 
 #footer p {
-	color: #EEEEEE;
+	color: #2b9ce2;
+	font-size: 12px;
 	margin-top: 20px;
-	padding-top: 5px;
+	padding-top: 15px;
 	border-top-color: #555;
 	border-top-style: solid;
 	border-top-width: 1px;
+	text-align: center;
 }
 
 .introText, .introSubText {
@@ -123,4 +137,13 @@ body {
 	text-decoration: none;
 	font-size: 16px;
 	color: red;
+}
+
+.unit .outer .secondMajorUnit p {
+	color: red;
+}
+
+#updates {
+	margin: 10px auto;
+	margin-bottom: 25px;
 }
