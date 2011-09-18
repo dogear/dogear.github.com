@@ -1,0 +1,126 @@
+* {
+    outline: none !important;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url('city-background.jpg');
+	background-attachment:fixed;
+}
+#container {
+	width: 1100px;
+	margin: 0 auto;
+	overflow: auto;
+	
+}
+
+#header {
+	height: 200px;
+}
+
+#signin_container{
+	float:right;
+	font-family: "Helvetica", "Arial", sans-serif;
+	font-size: 13px;
+}
+
+.credentials h2{
+	margin: 5px;
+	margin-bottom: 0px;
+}
+
+#logo {
+	float:left;
+	opacity: 0.8;
+	width: 200px;
+}
+
+#nav {
+	height: 100%;
+	width: 1100px;
+	background-color: #F29627;
+}
+
+#nav ul {
+	list-style: none;
+	height: 30px;
+	padding: 0px;
+	margin-left: 20px;
+	font-family: "Helvetica", "Arial", sans-serif;
+}
+
+#nav ul li{
+	float: left;
+	margin: 1px;
+}
+
+#nav ul li a:hover{
+	background-color:#EEEEEE;
+	border-radius: 3px;
+}
+
+#nav ul li a{
+	color:#555;
+	padding: 8px 20px;
+	font-size: 1.3em;
+	text-decoration: none;
+	line-height: 34px;
+	position: relative;
+	top: 10px;
+}
+
+#main {
+	font-family: "Helvetica", "Arial", sans-serif;
+	overflow: auto;
+	background-color: white;
+	opacity: 0.9;
+	border-color: #555;
+	border-style: solid;
+	border-width: 1px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#updates {
+	height: 310px;
+}
+
+#footer{
+	height: 40px;
+	position: relative;
+}
+
+#footer p {
+	color: #EEEEEE;
+	margin-top: 20px;
+	padding-top: 5px;
+	border-top-color: #555;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+
+.introText, .introSubText {
+	margin: 10px;
+}
+
+.featuresGrid {
+	height: 240px;
+}
+
+.featuresGrid .outer {
+	width: 46%;
+	float: left;
+	margin: 10px;
+}
+
+.featuresGrid .Image {
+	width: 31%;
+	float: left;
+	margin: 2px;
+}
+
+.featuresGrid a {
+	text-decoration: none;
+	font-size: 16px;
+	color: red;
+}
