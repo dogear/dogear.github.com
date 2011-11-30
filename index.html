@@ -1,31 +1,99 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>DogEar</title>
-<style>
-  body {
-    background : black;
-    color      : white;
-    margin-top : 100px;
-  }
-</style>
-<script type="text/javascript">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>Dogear</title>
+	<link rel="icon" type="image/png" href="images/icon.png">
+    <link type="text/css" href="style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+	<script type="text/javascript" src="js/base64.js"></script>
+	<script type="text/javascript" src="js/dogear_api.js"></script>
+	<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="js/connect.js"></script>
+	
+	<script>
+        function let_me_know() {
+            var email = document.getElementById("email").value;
+            
+            dogear.let_me_know(email, function (success) {
+              var signup = document.getElementById("signupHolder");
+              signup.innerHTML = '<br/><p><b>Thanks! We\'ll let you know!</b></p>';
+            });
+        }
+    </script>
+</head> 
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-25794255-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-</head>
-<body>
-  <center>
-    <img src="img/logo_light.png" width="400px"/>
-    <h1>Coming soon...</h1>
-  </center>
+<body style="width:100%; height: 100%;">
+	<div id="header">
+		<div id="signinHolder">
+		</div>
+		<div id="logo">
+			<img src="images/logo.png">
+		</div>
+	</div>
+	<div id="content">
+		<div class="contentPane feature">
+			<div class="contentFill">
+				<label>Simple</label>
+				<p>A clean interface for organizing and accessing all your favourite articles, videos,
+					blogs and pictures.</p>
+				<br/>
+				<center>
+				  <img src="images/simple.png">
+				</center>
+			</div>
+		</div>
+		<div class="contentPane feature">
+			<div class="contentFill">
+				<label>Seamless</label>
+				<p>Easily switch between desktop and mobile devices without losing your bookmarks.</p>
+				<br/>
+				<center>
+				  <img src="images/seamless.png">
+				</center>
+			</div>
+		</div>
+		<div class="contentPane feature">
+			<div class="contentFill getit">
+				<label>Everywhere</label>
+				<p>Browser extensions</p>
+					<div id="browsericonHolder">
+						<img class="browsericon" src="images/icons/safari_soon.png">
+						<img class="browsericon" src="images/icons/chrome_soon.png">
+						<img class="browsericon" src="images/icons/firefox_soon.png">
+					</div>
+				<p>Mobile apps</p>
+					<div id="browsericonHolder">
+						<img class="browsericon" src="images/icons/apple_soon.png">
+						<img class="browsericon" src="images/icons/android_soon.png">
+					</div>
+			</div>
+		</div>
+		<div class="contentPane register">
+			<div class="contentFill">
+				<label>Sign-Up</label>
+				  <p>Want to know when we launch?</p>
+					<div id="signupHolder">
+						<div class="signup">
+							<fieldset class="textbox">
+								<div class="inputHolder">
+								  <input class="inputBox" type="text" placeholder="Email" id="email">
+								</div>							
+								<div><input type="submit" value="Let me know!" onclick="javascript:let_me_know()"/></div>
+							</fieldset>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<div id="contactLinks">
+		<a href="http://twitter.com/dogearit" target="_blank"><img src="images/social/twitter.png"></a>
+		<a href="https://www.facebook.com/pages/Dogear/189443197809144" target="_blank"><img src="images/social/facebook.png"></a>
+		<a href="https://plus.google.com/u/0/b/110083977176612461815/" target="_blank"><img src="images/social/googleplus.png"></a>
+	</div>
+	<div id="footer">
+	</div>
 </body>
+
 </html>

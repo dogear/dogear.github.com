@@ -1,0 +1,129 @@
+body {
+	margin: 0px;
+	font-family: Helvetica, Arial, sans-serif;
+	min-width: 800px;
+}
+
+#header {
+	background-color: #CC3939;
+	height: 400px;
+}
+
+#signinHolder{
+	float:right;
+	color: #333;
+	font-size: 10pt;
+	height: 26px;
+	vertical-align: center;
+	width: 350px;
+  text-align: center;
+}
+
+.inputHolder {
+	overflow: visible;
+	height: 25px;
+	display: inline;
+}
+
+.inputBox {
+	color: #333;
+	height: 20px;
+	background-color: white;
+}
+
+.signin .inputBox {
+	width: 105px;
+}
+
+.signup .inputBox {
+	width: 250px;
+	margin-bottom: 3px;
+	height: 25px;
+}
+
+#logo {
+	margin: 0 auto;
+	width: 610px;
+	height: 320px;
+}
+
+#logo img {
+	margin-top: 125px;
+	margin-bottom: 25px;
+	width: 600px;
+}
+
+#content{
+	width: 100%;
+	min-width: 1250px;
+	background-color: #F3F3F3;
+	height: 250px;
+	border-bottom: 5px solid #FAFAFA;
+}
+
+.contentPane {
+	height: 100%;
+	float: left;
+	border-right: 1px solid #FCFCFC;
+}
+
+.feature {
+	width: 24%
+}
+
+.register {
+	width: 27%;
+	border-right: none;
+}
+
+.register .contentFill {
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.contentFill{
+	margin: 15px;
+}
+
+.contentFill p{
+	font-size: 1.3em;
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+.getit {
+	text-align: center;
+}
+
+.contentFill .browsericon {
+	width: 40px;
+	margin-bottom: 15px;
+}
+
+.contentFill label {
+	color: #606060;
+	font-size: 1.5em;
+	margin-bottom: 12px;
+	width: 100%;
+	font-weight: 500;
+	text-align: center;
+}
+
+.signup {
+	clear: both;
+	margin-left: 15px;
+	text-align: center;
+}
+
+#contactLinks {
+	position: absolute;
+	width: 150px;
+	top: 10px;
+	left: 10px;
+}
+
+#contactLinks img {
+	width: 25px;
+	margin: 2px;
+}
